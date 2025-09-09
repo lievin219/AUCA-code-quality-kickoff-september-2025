@@ -8,7 +8,7 @@ const items = [
   {name: 'Tomato', type: 'Food'},
   {name: 'Corn', type: 'Food'},
   {name: 'BMW', type: 'Car'}
-];
+];m
 
 const values = [2, 45, 6, 78, 25];
 
