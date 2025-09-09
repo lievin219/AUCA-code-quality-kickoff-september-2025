@@ -19,7 +19,7 @@ function isValidPassword(password) {
     for (let char of password) {
       if (char >= "A" && char <= "Z") hasUpper = true;
       if (char >= "a" && char <= "z") hasLower = true;
-    }
+    }  
     if (!hasUpper || !hasLower) {
       return false;
     }
