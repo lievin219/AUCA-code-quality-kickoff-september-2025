@@ -5,15 +5,11 @@
  */
 
 // FUNCTION 1
-// export default function cntRbt(ls) {
-//   var cnt = 0;
-//   for (var i = 0; i < ls.length; i++) {
-//     if (ls[i] == "R") {
-//       cnt++;
-//     }
-//   }
-//   return cnt;
-// }
+export default function findingR(ls) {
+  if (!Array.isArray(ls)) return 0; 
+
+  return ls.filter(item => item === "R").length;
+}
 
 export default function countRsFromString(string = "") {
   return string.split('').filter(character => character === "R").length
