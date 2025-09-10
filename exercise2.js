@@ -5,3 +5,7 @@
 //       return "Hello!";
 //     }
 //   }
+
+function greet(name) {
+    return `Hello${name ? `, ${name}` : ""}!`;
+  }
