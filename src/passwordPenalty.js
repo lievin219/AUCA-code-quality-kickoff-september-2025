@@ -1,4 +1,7 @@
 function penaltyPoints(password) {
+  if (typeof password !== "string" || password.length === 0) {
+    return 0;
+  }
     let penalty = 0;
     let count = 1;
   
@@ -20,6 +23,8 @@ function penaltyPoints(password) {
     else if (count >= 3) penalty += 2;
   
     return penalty;
+
+   
   }
 
    export default penaltyPoints

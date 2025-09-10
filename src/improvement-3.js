@@ -15,5 +15,11 @@
 //   return largest;
 // }
 
-const findLargestNumber = numbers => Math.max(...numbers);
-export default findLargestNumber;
+// const findLargestNumber = numbers => Math.max(...numbers);
+export default function findLargestNumber(numbers) {
+    if (!Array.isArray(numbers) || numbers.length === 0) {
+      throw new Error("Input must be a non-empty array of numbers");
+    }
+    return Math.max(...numbers);
+  }
+  

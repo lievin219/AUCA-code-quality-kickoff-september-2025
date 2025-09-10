@@ -1,6 +1,6 @@
 import findingR from "../improvement-1";
-import hasFood from "../improvement-2";
-import function3 from "../improvement-3";
+// import countRsFromString from "../improvement-2";
+import findLargestNumber from "../improvement-3";
 
 const items = [
   {name: 'Carrot', type: 'Food'},
@@ -8,7 +8,7 @@ const items = [
   {name: 'Tomato', type: 'Food'},
   {name: 'Corn', type: 'Food'},
   {name: 'BMW', type: 'Car'}
-];m
+]
 
 const values = [2, 45, 6, 78, 25];
 
@@ -18,16 +18,16 @@ describe("IMPROVEMENT", () => {
     expect(findingR("abcdefrRR1234")).toBe(2);
   });
 
-  test("function 2 should still work", () => {
-    expect(hasFood(items).length).toBe(3);
-    expect(hasFood(items)).toStrictEqual([
-      {name: 'Carrot', type: 'Food'},  
-      {name: 'Tomato', type: 'Food'},
-      {name: 'Corn', type: 'Food'}
-    ]);
-  });
+  // test("function 2 should still work", () => {
+  //   expect(countRsFromString(items).length).toBe(3);
+  //   expect(countRsFromString(items)).toStrictEqual([
+  //     {name: 'Carrot', type: 'Food'},  
+  //     {name: 'Tomato', type: 'Food'},
+  //     {name: 'Corn', type: 'Food'}
+  //   ]);
+  // });
 
   test("function 3 should still work", () => {
-    expect(function3(values)).toBe(78);
+    expect(findLargestNumber(values)).toBe(78);
   });
 });

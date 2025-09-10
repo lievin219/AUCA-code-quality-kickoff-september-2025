@@ -6,7 +6,7 @@
 
 // FUNCTION 2
 export default function hasFood(items) {
-  c(!Array.isArray(items)) 
+ if (!Array.isArray(items)) 
   return [];
 
   return items.filter(item => item && item.type === "Food");

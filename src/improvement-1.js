@@ -5,12 +5,14 @@
  */
 
 // FUNCTION 1
-export default function findingR(ls) {
+ export default function findingR(ls) {
   if (!Array.isArray(ls)) return 0; 
 
-  return ls.filter(item => item === "R").length;
+  return ls.filter(item => item === "R")
 }
 
-export default function countRsFromString(string = "") {
-  return string.split('').filter(character => character === "R").length
-}
+
+//  function countRsFromString(string) {
+//   return string.split('').filter(character => character === "R")
+// }
+// export default countRsFromString,findingR

@@ -1,5 +1,7 @@
+export  const forbiddenPasswords = ["1234567890", "password", "aaaaaaaaaa", "BBBccc1111","kamrhGDhAU","1244352354235235423455Aa"];
+
 function isValidPassword(password) {
-    const forbiddenPasswords = ["1234567890", "password", "aaaaaaaaaa", "BBBccc1111"];
+
   
    
     if (password.length !== 10) {
