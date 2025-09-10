@@ -1,4 +1,4 @@
-// Exercise 2
+// Exercise 1
 
 // function calculateAverage(numbers) {
 //     var sum = 0;
