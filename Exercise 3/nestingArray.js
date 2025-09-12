@@ -7,7 +7,7 @@
      if(!Array.isArray(newArray)){
         return 0
      }
-     
+
   let  depth=1;
        for ( const item  of newArray ){
         if(!Array.isArray(item)){
@@ -18,3 +18,19 @@
        }
         return depth
   }
+
+   function flatteningArray(newArray){
+
+     let result=[]
+      for (const item of newArray){
+         if (Array.isArray(item)){
+            result.push(...flatteningArray(item))
+         }
+         else{
+             result.push(item)
+         }
+      }
+       return result
+      
+
+   }
