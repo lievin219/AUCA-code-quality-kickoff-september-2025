@@ -3,12 +3,18 @@
  const nestedArray=[1,2,[3,4],[5]]
 
   function getNestedArray(newArray){
+
      if(!Array.isArray(newArray)){
         return 0
      }
-     const depth=1;
+     
+  let  depth=1;
        for ( const item  of newArray ){
+        if(!Array.isArray(item)){
+             return 0
+        }
 
-        
+         depth =Math.max(1,getNestedArray(item))
        }
+        return depth
   }
