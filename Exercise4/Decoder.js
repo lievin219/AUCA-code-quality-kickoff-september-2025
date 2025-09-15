@@ -10,6 +10,10 @@ function decoding(romans){
       }
 
        const LastValue=romans.length-1
-        
+         while(LastValue>=0){
+             let currentValue=LastValue[values[i]]
+
+             
+         }
     
-}
+} as 
