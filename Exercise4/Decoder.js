@@ -9,7 +9,7 @@ function decoding(romans) {
       M: 1000
     };
   
-    let LastValue = romans.length - 1; // start from the end
+    let LastValue = romans.length - 1; 
     let total = 0;
   
     while (LastValue >= 0) {
@@ -18,10 +18,10 @@ function decoding(romans) {
   
       if (LastValue > 0 && prevValue < currentValue) {
         total += currentValue - prevValue;
-        LastValue -= 2; // skip both characters
+        LastValue -= 2; 
       } else {
         total += currentValue;
-        LastValue--; // move one position left
+        LastValue--; 
       }
     }
   
