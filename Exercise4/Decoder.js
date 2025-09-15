@@ -9,11 +9,23 @@ function decoding(romans){
         M: 1000
       }
 
-       const LastValue=romans.length-1
+     let LastValue=romans.length-1
+       let total=0
          while(LastValue>=0){
-             let currentValue=LastValue[values[i]]
+             let currentValue=LastValue[values[LastValue]]
+              let prevValue=LastValue[values[LastValue-1]]
 
-             
+               if(LastValue<0 && prevValue<currentValue){
+total +=currentValue-prevValue
+LastValue-=2
+               }else{
+                 total=currentValue
+                 LastValue=LastValue--
+               }
+
+
          }
-    
-} as 
+     return total
+}
+
+ console.log(decoding('MM'))
